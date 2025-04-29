@@ -13,6 +13,10 @@ local function SUCC_bagDefaults()
 	SUCC_bagOptions.colors.bag['Soul Bag'] = {0.678, 0.549, 1}
 	SUCC_bagOptions.colors.bag['Herb Bag'] = {0.3, 0.8, 0.3}
 	SUCC_bagOptions.colors.bag['Enchanting Bag'] = {0.5, 0.4, 0.8}
+	SUCC_bagOptions.colors.bag['Bolsa'] = {0.3, 0.3, 0.3}
+	SUCC_bagOptions.colors.bag['Bolsa de almas'] = {0.678, 0.549, 1}
+	SUCC_bagOptions.colors.bag['Bolsa de hierbas'] = {0.3, 0.8, 0.3}
+	SUCC_bagOptions.colors.bag['Bolsa de encantamiento'] = {0.5, 0.4, 0.8}
 	SUCC_bagOptions.colors.override = false
 	SUCC_bagOptions.layout = {}
 	SUCC_bagOptions.layout.spacing = 4
@@ -205,7 +209,7 @@ local function ItemUpdateBorder(button, option)
 				end
 			end
 		end
-		button:GetNormalTexture():SetVertexColor(unpack(v))
+		button:GetNormalTexture():SetVertexColor(0.5., 0.5, 0.5)
 	end
 end
 
